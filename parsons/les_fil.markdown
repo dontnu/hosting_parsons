@@ -18,7 +18,7 @@
     "                student, rest = line.split(&quot;;&quot;)\n" +
     "                course, grade = rest.split(&quot;:&quot;)              \n" +
     "                if student not in data:\n" +
-    "                    data[student] = {}                \n" +
+    "                    data[student] = $$toggle::1::2::$$                \n" +
     "                data[student][course] = grade\n" +
     "    except FileNotFoundError:\n" +
     "        print(f&quot;Error: The file {filename} was not found.&quot;)\n" +
@@ -31,7 +31,8 @@
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true
+    "show_feedback": true,
+    "trashId": "sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
