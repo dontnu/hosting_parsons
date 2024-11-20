@@ -1,3 +1,29 @@
+---
+layout: default
+title: Les karakterer fra fil
+---
+Du er gitt en datafil (som tekst) hvor hver linje har studentnavn, emne og karakter, skilt med semikolon.
+Første linje er overskrift.
+
+Eksempel:
+```
+student_name;course_name:grade
+Alice;Mathematics:A
+Bob;Physics:B
+Alice;Physics:A
+Charlie;Mathematics:C
+Bob;Mathematics:B
+```
+
+Skriv funksjonen ```read_grades(filename)``` som leser filen og returnerer en ordbok, hvor
+- nøkkelen er studentens navn,
+- verdiene er en ordbok som kobler emne til karakter
+
+For eksempel-data over skal følgende returneres:
+```python
+{'Alice': {'Mathematics': 'A', 'Physics': 'A'}, 'Bob': {'Physics': 'B', 'Mathematics': 'B'}, 'Charlie': {'Mathematics': 'C'}}
+```
+
 <div id="sortableTrash" class="sortable-code"></div> 
 <div id="sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
