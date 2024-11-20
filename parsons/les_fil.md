@@ -3,11 +3,9 @@ layout: default
 title: Les karakterer fra fil
 ---
 Du er gitt en datafil (som tekst) hvor hver linje har studentnavn, emne og karakter, skilt med semikolon.
-Første linje er overskrift.
 
 Eksempel:
 ```
-student_name;course_name:grade
 Alice;Mathematics:A
 Bob;Physics:B
 Alice;Physics:A
@@ -44,11 +42,12 @@ For eksempel-data over skal følgende returneres:
     "                student, rest = line.split(&quot;;&quot;)\n" +
     "                course, grade = rest.split(&quot;:&quot;)              \n" +
     "                if student not in data:\n" +
-    "                    data[student] = $$toggle::1::2::$$                \n" +
+    "                    data[student] = {}                \n" +
     "                data[student][course] = grade\n" +
     "    except FileNotFoundError:\n" +
     "        print(f&quot;Error: The file {filename} was not found.&quot;)\n" +
-    "    return data";
+    "    return data\n" +
+    "data[student] = [] #distractor";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
     "max_wrong_lines": 10,
