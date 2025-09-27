@@ -28,7 +28,7 @@ description: # >- # this means to ignore newlines until "baseurl:"
   To start over, press the "Reset Problem" button.
 
 url: "https://dontnu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/hosting-parsons" # the subpath of your site, e.g. /blog
+baseurl: "/hosting_parsons" # the subpath of your site, e.g. /blog
 
 twitter_username:
 github_username:
